@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "title": "Nama Anggota",
+    "topic": "Constructor, this, String",
+    "description": "Simpan nama dan angkatan anggota, lalu susun label kartu anggota.",
+    "tasks": [
+      "Isi atribut nama dan angkatan dari kedua parameter constructor.",
+      "Kembalikan label dengan format nama + \" - \" + angkatan."
+    ],
+    "expected": "Rafi - 2024",
+    "starter": "class Anggota {\n    private String nama;\n    private int angkatan;\n\n    public Anggota(String nama, int angkatan) {\n        // TODO 1: Isi atribut nama dan angkatan dari kedua parameter constructor.\n        // Tulis kodemu di sini.\n\n    }\n\n    public String getLabel() {\n        // TODO 2: Kembalikan label dengan format nama + \" - \" + angkatan.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Anggota a = new Anggota(\"Rafi\", 2024);\n        System.out.println(a.getLabel());\n    }\n}\n",
+    "category": "Constructor",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 2,
+    "title": "Luas Persegi",
+    "topic": "Constructor, validasi, perkalian",
+    "description": "Sebuah persegi memiliki panjang sisi dalam sentimeter.",
+    "tasks": [
+      "Simpan sisi jika nilainya lebih dari 0. Jika tidak, gunakan sisi 1.",
+      "Kembalikan luas persegi: sisi × sisi."
+    ],
+    "expected": "16\n1",
+    "starter": "class Persegi {\n    private int sisi;\n\n    public Persegi(int sisi) {\n        // TODO 1: Simpan sisi jika nilainya lebih dari 0. Jika tidak, gunakan sisi 1.\n        // Tulis kodemu di sini.\n\n    }\n\n    public int hitungLuas() {\n        // TODO 2: Kembalikan luas persegi: sisi × sisi.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(new Persegi(4).hitungLuas());\n        System.out.println(new Persegi(0).hitungLuas());\n    }\n}\n",
+    "category": "Constructor",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 3,
+    "title": "Saldo Kartu",
+    "topic": "Method, if, penjumlahan",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Tambahkan nominal ke saldo hanya jika nominal lebih dari 0. Abaikan nilai lainnya.",
+      "Kembalikan saldo saat ini."
+    ],
+    "expected": "15000",
+    "starter": "class Kartu {\n    private int saldo = 10000;\n\n    public void isiSaldo(int nominal) {\n        // TODO 1: Tambahkan nominal ke saldo hanya jika nominal lebih dari 0. Abaikan nilai lainnya.\n        // Tulis kodemu di sini.\n\n    }\n\n    public int getSaldo() {\n        // TODO 2: Kembalikan saldo saat ini.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Kartu k = new Kartu();\n        k.isiSaldo(5000);\n        k.isiSaldo(-2000);\n        System.out.println(k.getSaldo());\n    }\n}\n",
+    "category": "Method & Logika",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 4,
+    "title": "Stok Roti",
+    "topic": "Method, if, penjumlahan",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Tambahkan jumlah ke stok hanya jika jumlah lebih dari 0.",
+      "Kembalikan stok saat ini."
+    ],
+    "expected": "8",
+    "starter": "class StokRoti {\n    private int stok = 5;\n\n    public void tambah(int jumlah) {\n        // TODO 1: Tambahkan jumlah ke stok hanya jika jumlah lebih dari 0.\n        // Tulis kodemu di sini.\n\n    }\n\n    public int getStok() {\n        // TODO 2: Kembalikan stok saat ini.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        StokRoti s = new StokRoti();\n        s.tambah(3);\n        s.tambah(-2);\n        System.out.println(s.getStok());\n    }\n}\n",
+    "category": "Method & Logika",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 5,
+    "title": "Meter ke Sentimeter",
+    "topic": "Constructor, validasi, perkalian",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Simpan meter jika tidak negatif. Jika negatif, simpan 0.",
+      "Kembalikan panjang dalam sentimeter: meter × 100."
+    ],
+    "expected": "200\n0",
+    "starter": "class Panjang {\n    private int meter;\n\n    public Panjang(int meter) {\n        // TODO 1: Simpan meter jika tidak negatif. Jika negatif, simpan 0.\n        // Tulis kodemu di sini.\n\n    }\n\n    public int keSentimeter() {\n        // TODO 2: Kembalikan panjang dalam sentimeter: meter × 100.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(new Panjang(2).keSentimeter());\n        System.out.println(new Panjang(-1).keSentimeter());\n    }\n}\n",
+    "category": "Constructor",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 6,
+    "title": "Belanja Buku",
+    "topic": "Perkalian, if, diskon",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Hitung harga × jumlah. Jika jumlah minimal 3, kurangi total dengan diskon tetap 2000. Jumlah selalu positif.",
+      "Kembalikan harga satu buku."
+    ],
+    "expected": "20000\n28000\n10000",
+    "starter": "class BelanjaBuku {\n    private int harga = 10000;\n\n    public int hitungTotal(int jumlah) {\n        // TODO 1: Hitung harga × jumlah. Jika jumlah minimal 3, kurangi total dengan diskon tetap 2000. Jumlah selalu positif.\n        // Tulis kodemu di sini.\n\n    }\n\n    public int getHarga() {\n        // TODO 2: Kembalikan harga satu buku.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        BelanjaBuku b = new BelanjaBuku();\n        System.out.println(b.hitungTotal(2));\n        System.out.println(b.hitungTotal(3));\n        System.out.println(b.getHarga());\n    }\n}\n",
+    "category": "Method & Logika",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 7,
+    "title": "Durasi ke Detik",
+    "topic": "Constructor, perkalian",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Simpan parameter menit dan detik ke kedua atribut. Menit tidak negatif dan detik antara 0–59.",
+      "Kembalikan total detik: menit × 60 + detik."
+    ],
+    "expected": "150",
+    "starter": "class Durasi {\n    private int menit;\n    private int detik;\n\n    public Durasi(int menit, int detik) {\n        // TODO 1: Simpan parameter menit dan detik ke kedua atribut. Menit tidak negatif dan detik antara 0–59.\n        // Tulis kodemu di sini.\n\n    }\n\n    public int keDetik() {\n        // TODO 2: Kembalikan total detik: menit × 60 + detik.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Durasi d = new Durasi(2, 30);\n        System.out.println(d.keDetik());\n    }\n}\n",
+    "category": "Constructor",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 8,
+    "title": "Denda Buku",
+    "topic": "Constructor, if, aritmatika",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Simpan hari terlambat ke atribut hari. Hari tidak negatif.",
+      "Jika hari paling banyak 1, denda 0. Selebihnya, kembalikan (hari - 1) × 1000."
+    ],
+    "expected": "0\n2000",
+    "starter": "class Denda {\n    private int hari;\n\n    public Denda(int hari) {\n        // TODO 1: Simpan hari terlambat ke atribut hari. Hari tidak negatif.\n        // Tulis kodemu di sini.\n\n    }\n\n    public int hitungDenda() {\n        // TODO 2: Jika hari paling banyak 1, denda 0. Selebihnya, kembalikan (hari - 1) × 1000.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(new Denda(1).hitungDenda());\n        System.out.println(new Denda(3).hitungDenda());\n    }\n}\n",
+    "category": "Constructor",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 9,
+    "title": "Persentase Baterai",
+    "topic": "Setter, validasi, &&",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Ganti atribut persen hanya jika parameter berada di antara 0 dan 100 (termasuk kedua batas). Abaikan nilai di luar rentang itu.",
+      "Kembalikan nilai persen saat ini."
+    ],
+    "expected": "80\n0",
+    "starter": "class Baterai {\n    private int persen = 50;\n\n    public void setPersen(int persen) {\n        // TODO 1: Ganti atribut persen hanya jika parameter berada di antara 0 dan 100 (termasuk kedua batas). Abaikan nilai di luar rentang itu.\n        // Tulis kodemu di sini.\n\n    }\n\n    public int getPersen() {\n        // TODO 2: Kembalikan nilai persen saat ini.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Baterai b = new Baterai();\n        b.setPersen(80);\n        b.setPersen(120);\n        System.out.println(b.getPersen());\n        b.setPersen(0);\n        System.out.println(b.getPersen());\n    }\n}\n",
+    "category": "Method & Logika",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 10,
+    "title": "Sakelar Lampu",
+    "topic": "Boolean, negasi",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Balik nilai menyala: true menjadi false dan false menjadi true. Boleh menggunakan ! atau if-else.",
+      "Kembalikan nilai menyala."
+    ],
+    "expected": "false\ntrue\nfalse",
+    "starter": "class Lampu {\n    private boolean menyala = false;\n\n    public void tekanSakelar() {\n        // TODO 1: Balik nilai menyala: true menjadi false dan false menjadi true. Boleh menggunakan ! atau if-else.\n        // Tulis kodemu di sini.\n\n    }\n\n    public boolean isMenyala() {\n        // TODO 2: Kembalikan nilai menyala.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Lampu l = new Lampu();\n        System.out.println(l.isMenyala());\n        l.tekanSakelar();\n        System.out.println(l.isMenyala());\n        l.tekanSakelar();\n        System.out.println(l.isMenyala());\n    }\n}\n",
+    "category": "Method & Logika",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 11,
+    "title": "Dua Nilai Kuis",
+    "topic": "Penjumlahan, double, pembagian",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Kembalikan penjumlahan nilai1 dan nilai2.",
+      "Kembalikan rata-rata sebagai double. Gunakan pembagian dengan 2.0 agar bagian desimal tidak hilang."
+    ],
+    "expected": "161\n80.5",
+    "starter": "class NilaiKuis {\n    private int nilai1 = 71;\n    private int nilai2 = 90;\n\n    public int jumlah() {\n        // TODO 1: Kembalikan penjumlahan nilai1 dan nilai2.\n        // Tulis kodemu di sini.\n\n    }\n\n    public double rataRata() {\n        // TODO 2: Kembalikan rata-rata sebagai double. Gunakan pembagian dengan 2.0 agar bagian desimal tidak hilang.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        NilaiKuis n = new NilaiKuis();\n        System.out.println(n.jumlah());\n        System.out.println(n.rataRata());\n    }\n}\n",
+    "category": "Method & Logika",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 12,
+    "title": "Cek Angka",
+    "topic": "Constructor, if-else",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Simpan parameter nilai ke atribut nilai.",
+      "Kembalikan \"Positif\" jika nilai > 0, \"Nol\" jika nilai == 0, atau \"Negatif\" jika nilai < 0."
+    ],
+    "expected": "Positif\nNol\nNegatif",
+    "starter": "class Angka {\n    private int nilai;\n\n    public Angka(int nilai) {\n        // TODO 1: Simpan parameter nilai ke atribut nilai.\n        // Tulis kodemu di sini.\n\n    }\n\n    public String getJenis() {\n        // TODO 2: Kembalikan \"Positif\" jika nilai > 0, \"Nol\" jika nilai == 0, atau \"Negatif\" jika nilai < 0.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(new Angka(5).getJenis());\n        System.out.println(new Angka(0).getJenis());\n        System.out.println(new Angka(-2).getJenis());\n    }\n}\n",
+    "category": "Constructor",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 13,
+    "title": "Barang Pertama",
+    "topic": "Array, length, if",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Jika array barang kosong, kembalikan \"Kosong\". Jika tidak, kembalikan elemen pertama.",
+      "Kembalikan banyak elemen array barang."
+    ],
+    "expected": "Buku\n2\nKosong",
+    "starter": "class DaftarBarang {\n    private String[] barang;\n    public DaftarBarang(String[] barang) { this.barang = barang; }\n\n    public String getPertama() {\n        // TODO 1: Jika array barang kosong, kembalikan \"Kosong\". Jika tidak, kembalikan elemen pertama.\n        // Tulis kodemu di sini.\n\n    }\n\n    public int jumlahBarang() {\n        // TODO 2: Kembalikan banyak elemen array barang.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        DaftarBarang a = new DaftarBarang(new String[]{\"Buku\", \"Pensil\"});\n        DaftarBarang b = new DaftarBarang(new String[]{});\n        System.out.println(a.getPertama());\n        System.out.println(a.jumlahBarang());\n        System.out.println(b.getPertama());\n    }\n}\n",
+    "category": "Array & Loop",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 14,
+    "title": "Nomor Antrean",
+    "topic": "Method, if, batas nilai",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Tambahkan 1 ke nomor hanya jika nomor masih kurang dari 5. Jika sudah 5, biarkan tetap 5.",
+      "Kembalikan nomor antrean."
+    ],
+    "expected": "2\n5",
+    "starter": "class Antrean {\n    private int nomor = 1;\n\n    public void berikutnya() {\n        // TODO 1: Tambahkan 1 ke nomor hanya jika nomor masih kurang dari 5. Jika sudah 5, biarkan tetap 5.\n        // Tulis kodemu di sini.\n\n    }\n\n    public int getNomor() {\n        // TODO 2: Kembalikan nomor antrean.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Antrean a = new Antrean();\n        a.berikutnya();\n        System.out.println(a.getNomor());\n        for (int i = 0; i < 5; i++) a.berikutnya();\n        System.out.println(a.getNomor());\n    }\n}\n",
+    "category": "Method & Logika",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 15,
+    "title": "Dua Angka dalam Array",
+    "topic": "Array, if, penjumlahan",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Kembalikan angka yang lebih besar di antara elemen indeks 0 dan 1. Jika sama, kembalikan salah satunya.",
+      "Kembalikan jumlah kedua elemen array."
+    ],
+    "expected": "5\n8",
+    "starter": "class Pasangan {\n    private int[] angka = {3, 5};\n\n    public int terbesar() {\n        // TODO 1: Kembalikan angka yang lebih besar di antara elemen indeks 0 dan 1. Jika sama, kembalikan salah satunya.\n        // Tulis kodemu di sini.\n\n    }\n\n    public int jumlah() {\n        // TODO 2: Kembalikan jumlah kedua elemen array.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Pasangan p = new Pasangan();\n        System.out.println(p.terbesar());\n        System.out.println(p.jumlah());\n    }\n}\n",
+    "category": "Array & Loop",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 16,
+    "title": "Kursi Bioskop",
+    "topic": "If, boolean, perubahan atribut",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Jika tersedia > 0, kurangi tersedia sebanyak 1 dan kembalikan true. Jika tidak, kembalikan false tanpa mengubah tersedia.",
+      "Kembalikan jumlah kursi yang tersedia."
+    ],
+    "expected": "true\nfalse\n0",
+    "starter": "class Kursi {\n    private int tersedia = 1;\n\n    public boolean pesanSatu() {\n        // TODO 1: Jika tersedia > 0, kurangi tersedia sebanyak 1 dan kembalikan true. Jika tidak, kembalikan false tanpa mengubah tersedia.\n        // Tulis kodemu di sini.\n\n    }\n\n    public int getTersedia() {\n        // TODO 2: Kembalikan jumlah kursi yang tersedia.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Kursi k = new Kursi();\n        System.out.println(k.pesanSatu());\n        System.out.println(k.pesanSatu());\n        System.out.println(k.getTersedia());\n    }\n}\n",
+    "category": "Method & Logika",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 17,
+    "title": "Panjang Kata",
+    "topic": "Constructor, String, trim(), length()",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Hilangkan spasi di awal dan akhir parameter teks dengan trim(), lalu simpan ke atribut teks. Teks tidak null.",
+      "Kembalikan banyak karakter teks yang sudah disimpan."
+    ],
+    "expected": "4",
+    "starter": "class Kata {\n    private String teks;\n\n    public Kata(String teks) {\n        // TODO 1: Hilangkan spasi di awal dan akhir parameter teks dengan trim(), lalu simpan ke atribut teks. Teks tidak null.\n        // Tulis kodemu di sini.\n\n    }\n\n    public int panjang() {\n        // TODO 2: Kembalikan banyak karakter teks yang sudah disimpan.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Kata k = new Kata(\"  Java  \");\n        System.out.println(k.panjang());\n    }\n}\n",
+    "category": "String",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 18,
+    "title": "Label Barang",
+    "topic": "Constructor, String",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Simpan parameter nama dan jumlah ke kedua atribut.",
+      "Kembalikan label dengan format \"Buku (3)\" untuk nama Buku dan jumlah 3. Gunakan nama + \" (\" + jumlah + \")\"."
+    ],
+    "expected": "Buku (3)",
+    "starter": "class Barang {\n    private String nama;\n    private int jumlah;\n\n    public Barang(String nama, int jumlah) {\n        // TODO 1: Simpan parameter nama dan jumlah ke kedua atribut.\n        // Tulis kodemu di sini.\n\n    }\n\n    public String getLabel() {\n        // TODO 2: Kembalikan label dengan format \"Buku (3)\" untuk nama Buku dan jumlah 3. Gunakan nama + \" (\" + jumlah + \")\".\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Barang b = new Barang(\"Buku\", 3);\n        System.out.println(b.getLabel());\n    }\n}\n",
+    "category": "String",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 19,
+    "title": "Nama Huruf Besar",
+    "topic": "String, trim(), toUpperCase()",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Kembalikan teks tanpa spasi awal/akhir dan dalam huruf besar. Gunakan trim() lalu toUpperCase(). Jangan ubah atribut teks.",
+      "Kembalikan teks asli."
+    ],
+    "expected": "RANI\n[ rani ]",
+    "starter": "class Nama {\n    private String teks = \" rani \";\n\n    public String hurufBesar() {\n        // TODO 1: Kembalikan teks tanpa spasi awal/akhir dan dalam huruf besar. Gunakan trim() lalu toUpperCase(). Jangan ubah atribut teks.\n        // Tulis kodemu di sini.\n\n    }\n\n    public String getTeks() {\n        // TODO 2: Kembalikan teks asli.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Nama n = new Nama();\n        System.out.println(n.hurufBesar());\n        System.out.println(\"[\" + n.getTeks() + \"]\");\n    }\n}\n",
+    "category": "String",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 20,
+    "title": "Sapaan Singkat",
+    "topic": "Constructor, String, if",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Hilangkan spasi awal/akhir dari nama. Jika hasilnya kosong, simpan \"Teman\"; selain itu simpan hasil trim(). Nama tidak null.",
+      "Kembalikan \"Halo, \" diikuti nama."
+    ],
+    "expected": "Halo, Dina\nHalo, Teman",
+    "starter": "class Sapaan {\n    private String nama;\n\n    public Sapaan(String nama) {\n        // TODO 1: Hilangkan spasi awal/akhir dari nama. Jika hasilnya kosong, simpan \"Teman\"; selain itu simpan hasil trim(). Nama tidak null.\n        // Tulis kodemu di sini.\n\n    }\n\n    public String sapa() {\n        // TODO 2: Kembalikan \"Halo, \" diikuti nama.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(new Sapaan(\" Dina \").sapa());\n        System.out.println(new Sapaan(\"   \").sapa());\n    }\n}\n",
+    "category": "String",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 21,
+    "title": "Pesan Pengumuman",
+    "topic": "String, setter, if",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Simpan pesan setelah trim() hanya jika hasilnya tidak kosong. Jika kosong, pertahankan pesan lama. Parameter tidak null.",
+      "Kembalikan pesan saat ini."
+    ],
+    "expected": "Selamat belajar",
+    "starter": "class Pengumuman {\n    private String pesan = \"Selamat pagi\";\n\n    public void setPesan(String pesan) {\n        // TODO 1: Simpan pesan setelah trim() hanya jika hasilnya tidak kosong. Jika kosong, pertahankan pesan lama. Parameter tidak null.\n        // Tulis kodemu di sini.\n\n    }\n\n    public String getPesan() {\n        // TODO 2: Kembalikan pesan saat ini.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Pengumuman p = new Pengumuman();\n        p.setPesan(\" Selamat belajar \");\n        p.setPesan(\"   \");\n        System.out.println(p.getPesan());\n    }\n}\n",
+    "category": "String",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 22,
+    "title": "Nomor Anggota",
+    "topic": "Constructor, validasi, getter",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Simpan nomor jika lebih dari 0; jika tidak, gunakan nomor 1.",
+      "Kembalikan nomor anggota."
+    ],
+    "expected": "7\n1",
+    "starter": "class NomorAnggota {\n    private int nomor;\n\n    public NomorAnggota(int nomor) {\n        // TODO 1: Simpan nomor jika lebih dari 0; jika tidak, gunakan nomor 1.\n        // Tulis kodemu di sini.\n\n    }\n\n    public int getNomor() {\n        // TODO 2: Kembalikan nomor anggota.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(new NomorAnggota(7).getNomor());\n        System.out.println(new NomorAnggota(0).getNomor());\n    }\n}\n",
+    "category": "Constructor",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 23,
+    "title": "Profil Kamera",
+    "topic": "Constructor, String",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Simpan merek dan resolusi ke kedua atribut. Semua parameter valid.",
+      "Kembalikan informasi dengan format merek + \" \" + resolusi + \"MP\"."
+    ],
+    "expected": "Canon 24MP",
+    "starter": "class Kamera {\n    private String merek;\n    private int resolusi;\n\n    public Kamera(String merek, int resolusi) {\n        // TODO 1: Simpan merek dan resolusi ke kedua atribut. Semua parameter valid.\n        // Tulis kodemu di sini.\n\n    }\n\n    public String getInfo() {\n        // TODO 2: Kembalikan informasi dengan format merek + \" \" + resolusi + \"MP\".\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Kamera k = new Kamera(\"Canon\", 24);\n        System.out.println(k.getInfo());\n    }\n}\n",
+    "category": "Constructor",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 24,
+    "title": "Memori Laptop",
+    "topic": "If, &&, penjumlahan",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Tambahkan tambahan ke ram hanya jika tambahan positif dan hasilnya tidak melebihi 16 GB. Abaikan penambahan yang tidak memenuhi syarat.",
+      "Kembalikan kapasitas ram saat ini."
+    ],
+    "expected": "8",
+    "starter": "class Laptop {\n    private int ram = 4;\n\n    public void tambahRam(int tambahan) {\n        // TODO 1: Tambahkan tambahan ke ram hanya jika tambahan positif dan hasilnya tidak melebihi 16 GB. Abaikan penambahan yang tidak memenuhi syarat.\n        // Tulis kodemu di sini.\n\n    }\n\n    public int getRam() {\n        // TODO 2: Kembalikan kapasitas ram saat ini.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Laptop l = new Laptop();\n        l.tambahRam(4);\n        l.tambahRam(16);\n        l.tambahRam(-2);\n        System.out.println(l.getRam());\n    }\n}\n",
+    "category": "Method & Logika",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 25,
+    "title": "Alamat Tujuan",
+    "topic": "Constructor, String, getter",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Simpan parameter kota dan kodePos ke kedua atribut. Kode pos berupa String.",
+      "Kembalikan alamat dengan format kota + \" - \" + kodePos."
+    ],
+    "expected": "Bandung - 40111",
+    "starter": "class Paket {\n    private String kota;\n    private String kodePos;\n\n    public Paket(String kota, String kodePos) {\n        // TODO 1: Simpan parameter kota dan kodePos ke kedua atribut. Kode pos berupa String.\n        // Tulis kodemu di sini.\n\n    }\n\n    public String getAlamat() {\n        // TODO 2: Kembalikan alamat dengan format kota + \" - \" + kodePos.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Paket p = new Paket(\"Bandung\", \"40111\");\n        System.out.println(p.getAlamat());\n    }\n}\n",
+    "category": "Constructor",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 26,
+    "title": "Biaya Laundry",
+    "topic": "Constructor, perkalian, if",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Simpan parameter berat ke atribut berat. Berat berupa kilogram bulat positif.",
+      "Hitung berat × 5000. Jika berat minimal 5 kg, kurangi total dengan diskon tetap 5000."
+    ],
+    "expected": "10000\n20000",
+    "starter": "class Laundry {\n    private int berat;\n\n    public Laundry(int berat) {\n        // TODO 1: Simpan parameter berat ke atribut berat. Berat berupa kilogram bulat positif.\n        // Tulis kodemu di sini.\n\n    }\n\n    public int hitungBiaya() {\n        // TODO 2: Hitung berat × 5000. Jika berat minimal 5 kg, kurangi total dengan diskon tetap 5000.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(new Laundry(2).hitungBiaya());\n        System.out.println(new Laundry(5).hitungBiaya());\n    }\n}\n",
+    "category": "Constructor",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 27,
+    "title": "Ongkos Kirim",
+    "topic": "If, penjumlahan",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Kembalikan biaya pengiriman normal.",
+      "Jika hargaBarang minimal 50000, kembalikan hargaBarang saja (gratis ongkir). Selain itu, kembalikan hargaBarang + biaya."
+    ],
+    "expected": "10000\n30000\n50000",
+    "starter": "class Pengiriman {\n    private int biaya = 10000;\n\n    public int getBiaya() {\n        // TODO 1: Kembalikan biaya pengiriman normal.\n        // Tulis kodemu di sini.\n\n    }\n\n    public int totalBayar(int hargaBarang) {\n        // TODO 2: Jika hargaBarang minimal 50000, kembalikan hargaBarang saja (gratis ongkir). Selain itu, kembalikan hargaBarang + biaya.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Pengiriman p = new Pengiriman();\n        System.out.println(p.getBiaya());\n        System.out.println(p.totalBayar(20000));\n        System.out.println(p.totalBayar(50000));\n    }\n}\n",
+    "category": "Method & Logika",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 28,
+    "title": "Sewa Sepeda",
+    "topic": "If, perkalian",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Jika jam <= 0, kembalikan 0. Jika positif, kembalikan jam × tarif.",
+      "Kembalikan tarif per jam."
+    ],
+    "expected": "10000\n0\n5000",
+    "starter": "class Sepeda {\n    private int tarif = 5000;\n\n    public int biayaSewa(int jam) {\n        // TODO 1: Jika jam <= 0, kembalikan 0. Jika positif, kembalikan jam × tarif.\n        // Tulis kodemu di sini.\n\n    }\n\n    public int getTarif() {\n        // TODO 2: Kembalikan tarif per jam.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Sepeda s = new Sepeda();\n        System.out.println(s.biayaSewa(2));\n        System.out.println(s.biayaSewa(-1));\n        System.out.println(s.getTarif());\n    }\n}\n",
+    "category": "Method & Logika",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 29,
+    "title": "Lulus Praktikum",
+    "topic": "Constructor, if-else",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Simpan nilai ke atribut nilai. Nilai selalu 0–100.",
+      "Kembalikan \"Sangat baik\" jika nilai minimal 80, \"Lulus\" jika nilai 60–79, atau \"Belum lulus\" jika di bawah 60."
+    ],
+    "expected": "Sangat baik\nLulus\nBelum lulus",
+    "starter": "class Praktikum {\n    private int nilai;\n\n    public Praktikum(int nilai) {\n        // TODO 1: Simpan nilai ke atribut nilai. Nilai selalu 0–100.\n        // Tulis kodemu di sini.\n\n    }\n\n    public String getStatus() {\n        // TODO 2: Kembalikan \"Sangat baik\" jika nilai minimal 80, \"Lulus\" jika nilai 60–79, atau \"Belum lulus\" jika di bawah 60.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(new Praktikum(80).getStatus());\n        System.out.println(new Praktikum(60).getStatus());\n        System.out.println(new Praktikum(50).getStatus());\n    }\n}\n",
+    "category": "Method & Logika",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 30,
+    "title": "Target Tabungan",
+    "topic": "If, penjumlahan, pengurangan",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Tambahkan uang ke saldo hanya jika uang positif.",
+      "Kembalikan kekurangan uang menuju target 10000. Jika saldo sudah minimal 10000, kembalikan 0."
+    ],
+    "expected": "7000\n0",
+    "starter": "class Tabungan {\n    private int saldo = 0;\n\n    public void setor(int uang) {\n        // TODO 1: Tambahkan uang ke saldo hanya jika uang positif.\n        // Tulis kodemu di sini.\n\n    }\n\n    public int sisaTarget() {\n        // TODO 2: Kembalikan kekurangan uang menuju target 10000. Jika saldo sudah minimal 10000, kembalikan 0.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Tabungan t = new Tabungan();\n        t.setor(3000);\n        t.setor(-1000);\n        System.out.println(t.sisaTarget());\n        t.setor(8000);\n        System.out.println(t.sisaTarget());\n    }\n}\n",
+    "category": "Method & Logika",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 31,
+    "title": "Kursi Kelas",
+    "topic": "If, boolean, perubahan atribut",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Kembalikan kapasitas dikurangi terisi.",
+      "Jika terisi masih kurang dari kapasitas, tambahkan 1 ke terisi dan kembalikan true. Jika penuh, kembalikan false."
+    ],
+    "expected": "true\nfalse\n0",
+    "starter": "class Kelas {\n    private int kapasitas = 5;\n    private int terisi = 4;\n\n    public int kursiKosong() {\n        // TODO 1: Kembalikan kapasitas dikurangi terisi.\n        // Tulis kodemu di sini.\n\n    }\n\n    public boolean daftar() {\n        // TODO 2: Jika terisi masih kurang dari kapasitas, tambahkan 1 ke terisi dan kembalikan true. Jika penuh, kembalikan false.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Kelas k = new Kelas();\n        System.out.println(k.daftar());\n        System.out.println(k.daftar());\n        System.out.println(k.kursiKosong());\n    }\n}\n",
+    "category": "Method & Logika",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 32,
+    "title": "Sisa Kuota",
+    "topic": "If, &&, pengurangan",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Kurangi sisa hanya jika jumlah positif dan tidak lebih dari sisa. Jika tidak memenuhi syarat, abaikan.",
+      "Kembalikan sisa kuota."
+    ],
+    "expected": "7",
+    "starter": "class Kuota {\n    private int sisa = 10;\n\n    public void pakai(int jumlah) {\n        // TODO 1: Kurangi sisa hanya jika jumlah positif dan tidak lebih dari sisa. Jika tidak memenuhi syarat, abaikan.\n        // Tulis kodemu di sini.\n\n    }\n\n    public int getSisa() {\n        // TODO 2: Kembalikan sisa kuota.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Kuota k = new Kuota();\n        k.pakai(3);\n        k.pakai(20);\n        k.pakai(-1);\n        System.out.println(k.getSisa());\n    }\n}\n",
+    "category": "Method & Logika",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 33,
+    "title": "Status Kehadiran",
+    "topic": "Constructor, boolean, if-else",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Simpan parameter hadir dan izin ke kedua atribut.",
+      "Jika hadir true, kembalikan \"Hadir\". Jika tidak hadir tetapi izin true, kembalikan \"Izin\". Selain itu, kembalikan \"Alpa\"."
+    ],
+    "expected": "Hadir\nIzin\nAlpa",
+    "starter": "class Kehadiran {\n    private boolean hadir;\n    private boolean izin;\n\n    public Kehadiran(boolean hadir, boolean izin) {\n        // TODO 1: Simpan parameter hadir dan izin ke kedua atribut.\n        // Tulis kodemu di sini.\n\n    }\n\n    public String getStatus() {\n        // TODO 2: Jika hadir true, kembalikan \"Hadir\". Jika tidak hadir tetapi izin true, kembalikan \"Izin\". Selain itu, kembalikan \"Alpa\".\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(new Kehadiran(true, false).getStatus());\n        System.out.println(new Kehadiran(false, true).getStatus());\n        System.out.println(new Kehadiran(false, false).getStatus());\n    }\n}\n",
+    "category": "Method & Logika",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 34,
+    "title": "Keranjang Buah",
+    "topic": "Array, indeks, if",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Kembalikan nama buah pada indeks yang diminta. Jika indeks negatif atau minimal sepanjang array, kembalikan \"Tidak ada\".",
+      "Kembalikan jumlah elemen array buah."
+    ],
+    "expected": "Jeruk\nTidak ada\n2",
+    "starter": "class Keranjang {\n    private String[] buah = {\"Apel\", \"Jeruk\"};\n\n    public String getBuah(int indeks) {\n        // TODO 1: Kembalikan nama buah pada indeks yang diminta. Jika indeks negatif atau minimal sepanjang array, kembalikan \"Tidak ada\".\n        // Tulis kodemu di sini.\n\n    }\n\n    public int jumlahBuah() {\n        // TODO 2: Kembalikan jumlah elemen array buah.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Keranjang k = new Keranjang();\n        System.out.println(k.getBuah(1));\n        System.out.println(k.getBuah(2));\n        System.out.println(k.jumlahBuah());\n    }\n}\n",
+    "category": "Array & Loop",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 35,
+    "title": "Suhu Harian",
+    "topic": "Constructor, if-else",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Simpan derajat ke atribut derajat.",
+      "Kembalikan \"Dingin\" jika derajat < 20, \"Sejuk\" jika 20–29, atau \"Panas\" jika minimal 30."
+    ],
+    "expected": "Dingin\nSejuk\nPanas",
+    "starter": "class Suhu {\n    private int derajat;\n\n    public Suhu(int derajat) {\n        // TODO 1: Simpan derajat ke atribut derajat.\n        // Tulis kodemu di sini.\n\n    }\n\n    public String getKondisi() {\n        // TODO 2: Kembalikan \"Dingin\" jika derajat < 20, \"Sejuk\" jika 20–29, atau \"Panas\" jika minimal 30.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(new Suhu(18).getKondisi());\n        System.out.println(new Suhu(20).getKondisi());\n        System.out.println(new Suhu(30).getKondisi());\n    }\n}\n",
+    "category": "Method & Logika",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 36,
+    "title": "Skor Permainan",
+    "topic": "Parameter, if, penjumlahan",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Tambahkan jumlah ke poin jika jumlah positif. Abaikan nilai lainnya.",
+      "Kembalikan poin saat ini."
+    ],
+    "expected": "30",
+    "starter": "class Skor {\n    private int poin = 0;\n\n    public void tambahPoin(int jumlah) {\n        // TODO 1: Tambahkan jumlah ke poin jika jumlah positif. Abaikan nilai lainnya.\n        // Tulis kodemu di sini.\n\n    }\n\n    public int getPoin() {\n        // TODO 2: Kembalikan poin saat ini.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Skor s = new Skor();\n        s.tambahPoin(10);\n        s.tambahPoin(20);\n        s.tambahPoin(-5);\n        System.out.println(s.getPoin());\n    }\n}\n",
+    "category": "Method & Logika",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 37,
+    "title": "Daftar Hari",
+    "topic": "Array, length, indeks",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Kembalikan jumlah elemen array hari.",
+      "Kembalikan elemen terakhir menggunakan hari.length - 1 sebagai indeks, agar tetap benar saat jumlah hari berubah. Array tidak kosong."
+    ],
+    "expected": "4\nKamis",
+    "starter": "class DaftarHari {\n    private String[] hari = {\"Senin\", \"Selasa\", \"Rabu\", \"Kamis\"};\n\n    public int jumlahHari() {\n        // TODO 1: Kembalikan jumlah elemen array hari.\n        // Tulis kodemu di sini.\n\n    }\n\n    public String getHariTerakhir() {\n        // TODO 2: Kembalikan elemen terakhir menggunakan hari.length - 1 sebagai indeks, agar tetap benar saat jumlah hari berubah. Array tidak kosong.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        DaftarHari d = new DaftarHari();\n        System.out.println(d.jumlahHari());\n        System.out.println(d.getHariTerakhir());\n    }\n}\n",
+    "category": "Array & Loop",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 38,
+    "title": "Hitung Mundur",
+    "topic": "If, pengurangan, batas nilai",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Kurangi detik sebanyak jumlah jika jumlah positif. Jika hasilnya negatif, ubah menjadi 0. Abaikan jumlah <= 0.",
+      "Kembalikan detik saat ini."
+    ],
+    "expected": "3\n0",
+    "starter": "class Timer {\n    private int detik = 5;\n\n    public void kurangi(int jumlah) {\n        // TODO 1: Kurangi detik sebanyak jumlah jika jumlah positif. Jika hasilnya negatif, ubah menjadi 0. Abaikan jumlah <= 0.\n        // Tulis kodemu di sini.\n\n    }\n\n    public int getDetik() {\n        // TODO 2: Kembalikan detik saat ini.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Timer t = new Timer();\n        t.kurangi(2);\n        System.out.println(t.getDetik());\n        t.kurangi(10);\n        System.out.println(t.getDetik());\n    }\n}\n",
+    "category": "Method & Logika",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 39,
+    "title": "Genap Positif",
+    "topic": "Constructor, modulo, &&",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Simpan angka ke atribut angka.",
+      "Kembalikan true hanya jika angka genap dan lebih dari 0. Gunakan % serta &&."
+    ],
+    "expected": "true\nfalse\nfalse\nfalse",
+    "starter": "class Bilangan {\n    private int angka;\n\n    public Bilangan(int angka) {\n        // TODO 1: Simpan angka ke atribut angka.\n        // Tulis kodemu di sini.\n\n    }\n\n    public boolean isGenapPositif() {\n        // TODO 2: Kembalikan true hanya jika angka genap dan lebih dari 0. Gunakan % serta &&.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(new Bilangan(4).isGenapPositif());\n        System.out.println(new Bilangan(5).isGenapPositif());\n        System.out.println(new Bilangan(0).isGenapPositif());\n        System.out.println(new Bilangan(-2).isGenapPositif());\n    }\n}\n",
+    "category": "Method & Logika",
+    "level": "Dasar +",
+    "minutes": 8
+  },
+  {
+    "id": 40,
+    "title": "Penjumlahan dan Kuadrat",
+    "topic": "For, penjumlahan, perkalian",
+    "description": "Lengkapi dua method berikut. Data pada main sudah disiapkan dan tidak perlu diubah.",
+    "tasks": [
+      "Kembalikan jumlah bilangan dari 1 sampai n dengan perulangan for. n selalu positif. Contoh n=3: 1+2+3.",
+      "Kembalikan kuadrat angka: angka × angka."
+    ],
+    "expected": "10\n9",
+    "starter": "class Hitung {\n\n    public int jumlahSampai(int n) {\n        // TODO 1: Kembalikan jumlah bilangan dari 1 sampai n dengan perulangan for. n selalu positif. Contoh n=3: 1+2+3.\n        // Tulis kodemu di sini.\n\n    }\n\n    public int kuadrat(int angka) {\n        // TODO 2: Kembalikan kuadrat angka: angka × angka.\n        // Tulis kodemu di sini.\n\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        Hitung h = new Hitung();\n        System.out.println(h.jumlahSampai(4));\n        System.out.println(h.kuadrat(3));\n    }\n}\n",
+    "category": "Array & Loop",
+    "level": "Dasar +",
+    "minutes": 8
+  }
+]

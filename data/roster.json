@@ -1,0 +1,224 @@
+[
+  {
+    "nim": "250810701100008",
+    "name": "Hanif Maulana",
+    "code": "08",
+    "questionId": 36
+  },
+  {
+    "nim": "250810701100012",
+    "name": "Siti Tara Maisura",
+    "code": "12",
+    "questionId": 17
+  },
+  {
+    "nim": "250810701100014",
+    "name": "Syella Zikra Arifa",
+    "code": "14",
+    "questionId": 13
+  },
+  {
+    "nim": "250810701100021",
+    "name": "Ibnul Jawzy",
+    "code": "21",
+    "questionId": 3
+  },
+  {
+    "nim": "250810701100022",
+    "name": "Muhammad Albharaka Putrosandy",
+    "code": "22",
+    "questionId": 34
+  },
+  {
+    "nim": "250810701100024",
+    "name": "Putroe Zalfa",
+    "code": "24",
+    "questionId": 5
+  },
+  {
+    "nim": "250810701100029",
+    "name": "Aisya Ghaisany",
+    "code": "29",
+    "questionId": 40
+  },
+  {
+    "nim": "250810701100030",
+    "name": "Putri Rahmatul 'Ulya",
+    "code": "30",
+    "questionId": 10
+  },
+  {
+    "nim": "250810701100031",
+    "name": "Nabil Al Fijar",
+    "code": "31",
+    "questionId": 9
+  },
+  {
+    "nim": "250810701100034",
+    "name": "Al Aul Tsaqif",
+    "code": "34",
+    "questionId": 29
+  },
+  {
+    "nim": "250810701100038",
+    "name": "Keisya Zahira",
+    "code": "38",
+    "questionId": 18
+  },
+  {
+    "nim": "250810701100042",
+    "name": "Naila Syakira Bahri",
+    "code": "42",
+    "questionId": 31
+  },
+  {
+    "nim": "250810701100051",
+    "name": "M. Dzaky Syraj",
+    "code": "51",
+    "questionId": 26
+  },
+  {
+    "nim": "250810701100052",
+    "name": "Auzan Valy Hafidza",
+    "code": "52",
+    "questionId": 12
+  },
+  {
+    "nim": "250810701100053",
+    "name": "Muhammad Isyraq Akramin",
+    "code": "53",
+    "questionId": 15
+  },
+  {
+    "nim": "250810701100055",
+    "name": "Siti Salwa Shafina",
+    "code": "55",
+    "questionId": 24
+  },
+  {
+    "nim": "250810701100063",
+    "name": "Alief Aqsha",
+    "code": "63",
+    "questionId": 27
+  },
+  {
+    "nim": "250810701100065",
+    "name": "Khoirotun Hisan Br.B",
+    "code": "65",
+    "questionId": 33
+  },
+  {
+    "nim": "250810701100067",
+    "name": "Kayla Adila Farija Atika",
+    "code": "67",
+    "questionId": 19
+  },
+  {
+    "nim": "250810701100073",
+    "name": "Arinal Haq",
+    "code": "73",
+    "questionId": 20
+  },
+  {
+    "nim": "250810701100074",
+    "name": "Tiara Balqis",
+    "code": "74",
+    "questionId": 16
+  },
+  {
+    "nim": "250810701100079",
+    "name": "Imam As-Shadiq",
+    "code": "79",
+    "questionId": 22
+  },
+  {
+    "nim": "250810701100080",
+    "name": "Abrar Muda",
+    "code": "80",
+    "questionId": 25
+  },
+  {
+    "nim": "250810701100086",
+    "name": "Annisa Fadhilah",
+    "code": "86",
+    "questionId": 7
+  },
+  {
+    "nim": "250810701100087",
+    "name": "Mirza Nur Akhyar",
+    "code": "87",
+    "questionId": 37
+  },
+  {
+    "nim": "250810701100093",
+    "name": "Nawal Azqia",
+    "code": "93",
+    "questionId": 8
+  },
+  {
+    "nim": "250810701100098",
+    "name": "M. Hafidh Farras",
+    "code": "98",
+    "questionId": 2
+  },
+  {
+    "nim": "250810701100103",
+    "name": "Salwa Fadhilla",
+    "code": "103",
+    "questionId": 1
+  },
+  {
+    "nim": "250810701100104",
+    "name": "M. Farras Munawwir",
+    "code": "104",
+    "questionId": 30
+  },
+  {
+    "nim": "250810701100109",
+    "name": "M. Ihsan Syahni",
+    "code": "109",
+    "questionId": 14
+  },
+  {
+    "nim": "250810701100110",
+    "name": "Hally Lubbaba",
+    "code": "110",
+    "questionId": 32
+  },
+  {
+    "nim": "250810701100111",
+    "name": "Farras Arthada Siregar",
+    "code": "111",
+    "questionId": 38
+  },
+  {
+    "nim": "250810701100112",
+    "name": "T. Haikal Saputra",
+    "code": "112",
+    "questionId": 28
+  },
+  {
+    "nim": "250810701100113",
+    "name": "Muhammad Rayyan",
+    "code": "113",
+    "questionId": 11
+  },
+  {
+    "nim": "24081070100115",
+    "name": "Mirdha Aulia Zahra",
+    "code": "115",
+    "questionId": 21
+  },
+  {
+    "nim": "00000000000901",
+    "name": "Dummy Uji 1",
+    "code": "901",
+    "questionId": 4
+  },
+  {
+    "nim": "00000000000902",
+    "name": "Dummy Uji 2",
+    "code": "902",
+    "questionId": 6
+  }
+]

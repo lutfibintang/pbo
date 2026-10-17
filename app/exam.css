@@ -1,0 +1,155 @@
+:root {
+  color-scheme: dark;
+  --paper: #10181c;
+  --ink: #e4edef;
+  --line: #304148;
+  --surface: #172125;
+  --surface-raised: #1d2b30;
+  --text-secondary: #b7c7cb;
+  --text-muted: #9aafb5;
+  --accent-text: #8ddac5;
+}
+
+body { background: var(--paper); color: var(--ink); }
+::selection { background: #28594f; color: #f2fffa; }
+::-webkit-scrollbar-thumb { background: #496069; }
+
+.exam-shell .main-area {
+  margin: 0 auto;
+  padding: 24px 28px 14px;
+  width: 100%;
+  max-width: 1800px;
+}
+.exam-shell .workspace-heading { margin-bottom: 22px; }
+.exam-shell .workspace-heading h1 { font-size: 25px; }
+.exam-shell .workbench {
+  height: calc(100dvh - 140px);
+  min-height: 630px;
+  grid-template-columns: minmax(320px, .82fr) minmax(420px, 1.18fr);
+}
+.exam-shell.focus-mode .workbench { grid-template-columns: 1fr; }
+.exam-shell .workspace-footer { padding-top: 12px; }
+
+.exam-shell .workspace-heading h1 span { color: var(--text-secondary); }
+.exam-shell .workspace-heading p { color: var(--text-muted); font-size: 12px; }
+.exam-shell .workbench {
+  background: var(--surface);
+  border-color: var(--line);
+  box-shadow: 0 8px 30px #00000020;
+}
+.exam-shell .problem-panel {
+  background: var(--surface);
+  border-color: var(--line);
+}
+.exam-shell .panel-tabs,
+.exam-shell .problem-footer { background: #19262b; }
+.exam-shell .panel-tabs > button:not(.icon-button) { color: var(--text-muted); }
+.exam-shell .panel-tabs > button.selected { color: var(--accent-text); }
+.exam-shell .panel-tabs > button.selected::after { background: var(--accent-text); }
+.exam-shell .icon-button { color: var(--text-secondary); }
+.exam-shell .icon-button:hover { background: #2b3d44; }
+.exam-shell .question-pill,
+.exam-shell .estimate,
+.exam-shell .expected-heading > span,
+.exam-shell .problem-footer { color: var(--text-muted); }
+.exam-shell .difficulty {
+  background: #193c32;
+  border-color: #315b4e;
+  color: #a2e6be;
+}
+.exam-shell .difficulty.medium {
+  background: #3b3121;
+  border-color: #675230;
+  color: #f0cc8e;
+}
+.exam-shell .topic-tags span {
+  background: #1f3036;
+  border-color: #35494f;
+  color: #bed0d4;
+  font-size: 10px;
+}
+.exam-shell .problem-story,
+.exam-shell .task-list li {
+  color: #c9d7db;
+  font-size: 14px;
+  line-height: 1.85;
+}
+.exam-shell .task-heading h3,
+.exam-shell .expected-heading h3 { color: #e0edef; font-size: 13px; }
+.exam-shell .task-heading > span {
+  background: #24363c;
+  color: var(--text-secondary);
+  font-size: 10px;
+}
+.exam-shell .task-number {
+  background: #224239;
+  color: #b0e6cd;
+  min-width: 25px;
+  height: 25px;
+  font-size: 11px;
+}
+.exam-shell .expected-code {
+  background: #111c20;
+  border-color: #30454b;
+  color: #b4e4d1;
+  font-size: 13px;
+}
+.exam-shell .expected-code.large { font-size: 14px; }
+.exam-shell .tip-box {
+  background: #1b302a;
+  border-color: #345148;
+  color: #9dd4bd;
+}
+.exam-shell .tip-box strong { color: #bde8d3; font-size: 12px; }
+.exam-shell .tip-box p { color: #b0c9bc; font-size: 12px; line-height: 1.8; }
+.exam-shell .tip-box code { color: #d2f3df; background: #29483b; }
+.exam-shell .workspace-footer,
+.exam-shell .workspace-footer button { color: var(--text-muted); }
+.exam-shell .warning {
+  background: #332b1d;
+  border-color: #6a5530;
+  color: #efd6a3;
+}
+
+/* Help and reset dialogs use the same palette as the workspace. */
+.exam-shell .modal {
+  background: var(--surface);
+  border-color: var(--line);
+  color: var(--ink);
+  box-shadow: 0 25px 100px #00000070;
+}
+.exam-shell .modal::backdrop { background: #060d13b3; }
+.exam-shell .modal-header { background: var(--surface-raised); }
+.exam-shell .modal-body,
+.exam-shell .guide-intro p,
+.exam-shell .guide-steps p,
+.exam-shell .guide-note { color: var(--text-secondary); }
+.exam-shell .guide-intro h3,
+.exam-shell .guide-steps strong,
+.exam-shell .guide-note strong { color: #d1e8dc; }
+.exam-shell .guide-steps b { background: #244238; color: #a4dfbe; }
+.exam-shell .shortcut-grid kbd {
+  background: #24363c;
+  border-color: #3b5058;
+  color: #d8e5e8;
+}
+.exam-shell .outline-button {
+  background: #213138;
+  border-color: #496169;
+  color: #d0e0e3;
+}
+.exam-shell .outline-button:hover { background: #2b4149; }
+
+@media (max-width: 980px) {
+  .exam-shell .main-area { padding: 20px 18px 12px; }
+  .exam-shell .workbench { grid-template-columns: minmax(280px, .8fr) minmax(360px, 1.2fr); }
+}
+@media (max-width: 720px) {
+  .exam-shell .main-area { padding: 20px 13px 14px; }
+  .exam-shell .workspace-heading { margin-bottom: 18px; }
+  .exam-shell .workspace-heading h1 { font-size: 22px; }
+  .exam-shell .workbench { height: auto; min-height: 0; }
+  .exam-shell .random-button { margin-top: 5px; }
+  .exam-shell.focus-mode .coding-panel { height: calc(100dvh - 170px); }
+}
+.question-navigation{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 18px}.question-navigation button{width:36px;height:34px;border:1px solid #35494f;background:#1d2b30;color:#c9d7db;border-radius:6px;justify-content:center;font-size:13px}.question-navigation button[aria-current]{background:#287562;border-color:#8ddac5;color:white}.student-badge{display:flex;flex-direction:column;gap:5px;text-align:right;font-size:13px}.student-badge span{color:#9aafb5}.identity-card{max-width:500px;margin:10vh auto;padding:32px;background:#172125;border:1px solid #304148;border-radius:14px}.identity-card h1{font-size:26px;margin:12px 0}.identity-card p{font-size:14px;line-height:1.7;margin-bottom:20px}.identity-card form,.identity-card label{display:flex;flex-direction:column;gap:8px}.identity-card form{gap:18px}.identity-card input,.admin-panel input{background:#10181c;color:#e4edef;border:1px solid #496069;padding:10px;border-radius:6px}.identity-card .check-button{justify-content:center;padding:13px}.admin-panel{max-width:1200px;margin:auto;padding:32px}.admin-panel h1{font-size:28px;margin-bottom:12px}.admin-panel p{line-height:1.8;color:#b7c7cb}.admin-panel table{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}.admin-panel td,.admin-panel th{text-align:left;padding:12px;border-bottom:1px solid #304148;vertical-align:top}.admin-panel pre{white-space:pre-wrap;background:#10181c;padding:18px;max-height:420px;overflow:auto;font-size:13px}.admin-panel summary{cursor:pointer;color:#8ddac5}.admin-panel a{color:#8ddac5}.admin-panel form{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.admin-scroll{overflow:auto}.admin-pages{display:flex;justify-content:space-between;padding:15px 0}
